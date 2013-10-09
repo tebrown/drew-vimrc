@@ -24,6 +24,12 @@ ln -F .vimrc_bundles ~/
 # Install Vundle (https://github.com/gmarik/vundle)
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+# Install YouCompleteMe, if applicable
+VIM_VERSION=`vim --version | grep 7.4`
+if [[$VIM_VERSION != ""]]; then
+    echo "Bundle 'Valloric/YouCompleteMe'" >> .vimrc_bundles
+fi
+
 # Clean/install bundles
 vim -u .vimrc_setup
 

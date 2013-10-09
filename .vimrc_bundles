@@ -10,4 +10,4 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Yggdroot/indentLine'
-
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
