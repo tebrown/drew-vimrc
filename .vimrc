@@ -24,6 +24,9 @@ set backspace=indent,eol,start
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 
+" python3, by default for syntax checking
+let g:syntastic_python_python_exe = 'python3'
+
 colorscheme distinguished
 if has("gui")
     au GUIEnter * colorscheme obsidian
