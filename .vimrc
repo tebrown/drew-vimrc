@@ -24,11 +24,9 @@ set backspace=indent,eol,start
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 
-" This needs a bit of work since we want to support :gui
-if has("gui_running")
-    colorscheme obsidian
-else
-    colorscheme distinguished
+colorscheme distinguished
+if has("gui")
+    au GUIEnter * colorscheme obsidian
 endif
 syntax on
 
