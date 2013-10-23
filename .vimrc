@@ -1,5 +1,7 @@
 " Fix shell
 set shell=/bin/bash
+" make it read the bash aliases
+set shellcmdflag=-ic
 
 " Not compatible with Vi
 set nocompatible
@@ -41,6 +43,10 @@ set laststatus=2
 
 " Ruler
 " set colorcolumn=80
+
+" latex rendering in the background with LatexBox
+let g:LatexBox_latexmk_async=1
+let g:LatexBox_latexmk_preview_continuously=1
 
 " Tabs
 set tabstop=8
