@@ -13,11 +13,11 @@ source ~/.vimrc_vundle
 source ~/.vimrc_bundles
 
 " Enable mouse
-set mouse=a
+"set mouse=a
 
 " Relative line numbers
-set rnu
-set nu
+"set rnu
+"set nu
 
 " Fix backspace
 set backspace=indent,eol,start
@@ -56,7 +56,7 @@ set smarttab
 set expandtab
 let g:indentLine_char = '|'
 let g:indentLine_color_term = 128
-set list lcs=tab:\|\ 
+"set list lcs=tab:\|\ 
 set cursorline
 
 set spell spelllang=en_us
